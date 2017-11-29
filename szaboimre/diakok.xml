@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.8.0_144" class="java.beans.XMLDecoder">
+ <object class="x20171129.Diakok" id="Diakok0">
+  <void class="x20171129.Diakok" method="getField">
+   <string>nev</string>
+   <void method="set">
+    <object idref="Diakok0"/>
+    <string>Nagy Sándor</string>
+   </void>
+  </void>
+  <void class="x20171129.Diakok" method="getField">
+   <string>kor</string>
+   <void method="set">
+    <object idref="Diakok0"/>
+    <int>33</int>
+   </void>
+  </void>
+ </object>
+ <object class="x20171129.Diakok" id="Diakok1">
+  <void class="x20171129.Diakok" method="getField">
+   <string>nev</string>
+   <void method="set">
+    <object idref="Diakok1"/>
+    <string>Eszme Ralda</string>
+   </void>
+  </void>
+  <void class="x20171129.Diakok" method="getField">
+   <string>kor</string>
+   <void method="set">
+    <object idref="Diakok1"/>
+    <int>28</int>
+   </void>
+  </void>
+ </object>
 </java>

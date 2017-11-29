@@ -10,12 +10,6 @@ import java.io.Serializable;
  * @author Szabó Imre Márió
  */
 
-class Diakok implements Serializable {
-
-    String nev;
-    Integer kor;
-}
-
 public class XMLSorositas {
 
     private static final String FILE = "diakok.xml";
@@ -33,9 +27,11 @@ public class XMLSorositas {
         try {
             kiir = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(FILE)));
         } catch (FileNotFoundException fnfe) {
-            System.out.println("ERROR: A diakok.xml fájl készítése közben hiba lépett fel.");
+            System.out.println("ERROR: A diakok.xml fájl készítése "
+                    + "vagy keresése közben hiba lépett fel.");
         }
         kiir.writeObject(d1);
+        kiir.writeObject(d2);
         kiir.close();
     }
 
