@@ -1,5 +1,7 @@
 package x20171108;
 
+import java.beans.XMLEncoder;
+import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -18,6 +20,9 @@ class Diak implements Serializable {
 }
 
 public class Sorositas {
+    
+  private static final String FILE = "diakok.xml";
+    
   public static void make() throws FileNotFoundException, IOException {
     Diak d1 = new Diak();
     d1.nev = "Nagy Sándor";
